@@ -1,0 +1,49 @@
+main() {
+  var s1 = 'Single quotes';
+  var s2 = "Double quotes";
+  var s3 = 'It\'s easy to escape delimeter.';
+  var s4 ="It 's easy to escape delimeter.";
+  print(s1);
+  print(s2);
+  print(s3);
+  print(s4);
+  print('');
+
+  //Raw String
+  var s =r' In a raw String,not even \n gets special treatment.';
+  print(s);
+
+  var age=35;
+  var str ='My age is $age';
+  print(str);
+
+  var m1 ='''
+You can create
+ multline string.
+ ''';
+  var m2 ="""
+You can create
+ multline string.
+ """;
+ print(m1);
+ print(m2);
+
+ //Type Conversion
+ //String ->int
+ var one =int.parse('1');
+ assert(one == 1);
+
+ //String -> double
+ var oneptone= double.parse('1.1');
+ assert(oneptone== 1.1);
+
+ //int -> String
+ String oneAsString =1.toString();
+ assert(oneAsString == '1');
+
+ //double -> String
+ String piAsString =3.14159.toStringAsFixed(2);
+ // conv to 2 fixed point number
+ assert(piAsString == '3.14');
+
+}
