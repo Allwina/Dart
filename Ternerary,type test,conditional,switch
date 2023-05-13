@@ -1,0 +1,42 @@
+void main(){
+  int x=100;
+  var result = x % 2 == 0 ? 'even':'odd';
+  print(result);
+}
+
+//type test
+void main(){
+  var x = 100;
+  if(x is int){
+    print('integer');
+  }
+}
+
+//Conditional statement
+void main(){
+  int number = 6;
+  if(number % 2 == 0){
+    print('even');
+  }
+  else if (number % 3 == 0){
+    print('odd');
+  }
+  else{
+    print('Confused');
+  }
+}
+
+//switch
+void main(){
+  int number = 0;
+  switch(number){
+    case 0:
+    print('even');
+    break;
+    case 1:
+    print('odd');
+    break;
+    default:
+    print('confused');
+  }
+}
